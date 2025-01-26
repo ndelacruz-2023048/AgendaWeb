@@ -2,16 +2,88 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
 }
 
 body {
     position: relative;
 }
 
-.newTask {
+.agendaweb{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #3d52e4;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.containerbutton{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btnewtask{
+    width: 300px;
+    cursor: pointer;
+}
+
+.containerchecklist{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    width: 40%;
+    margin: 20px auto 0 auto;
+    padding:0 30px;
+    height: calc(100vh - 228px);
+    overflow:scroll
+}
+
+.taskadded{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 14px -7px rgba(0,0,0,0.75);
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 15px;
+}
+
+.taskadded_fields{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.taskadded_buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.taskadded_buttons > button{
+    width: 100%;
+}
+
+.taskadded_buttons > button:nth-child(1){
+    background-color: #3d52e4;
+}
+.taskadded_buttons > button:nth-child(2){
+    background-color: #e43d3d;
+}
+
+.newTask, .updateTask {
     position: absolute;
-    background-color: aqua;
+    background-color: rgba(0, 0, 0,0.5);
     height: 100vh;
     width: 100vw;
     top: 0;
@@ -19,4 +91,84 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: none;
+}
+
+.newTask_description, .updateTask_description{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.newTask_title{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 4px solid #3d52e4;
+    padding: 10px 0;
+}
+
+.newTask_divisions{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+
+}
+
+.labeltask{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.newTask_fields{
+    height: 40px;
+    font-size: 18px;
+    background-color: #f1f5f9;
+    border: none;
+    padding-left: 10px;
+}
+.newTask_btn{
+    background-color: #3d52e4;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px){
+    .containerchecklist{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 768px){
+    .newTask_description, .updateTask_description{
+        width: 90%;
+    }
+    .btnewtask{
+        width: 90%;
+    }
+    .containerchecklist{
+        width: 100%;
+    }
+
+    .taskadded_buttons{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.visible{
+    display: flex;
 }
