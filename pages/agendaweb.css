@@ -432,6 +432,10 @@ main {
     width: 20px;
 }
 
+.detailContact_containerlinks{
+    display: flex;
+}
+
 @media (min-width: 768px) {
     .profile_container_nuevo{
         flex-direction: row;
