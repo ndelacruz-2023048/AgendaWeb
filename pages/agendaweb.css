@@ -121,22 +121,22 @@ main {
 }
 
 /*Contactos*/
-.contacts_main{
+.contacts_main {
     background-color: #0a65c2;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  justify-content: center;
-  display: flex;
-  align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
-.contacts_titlegeneral{
+.contacts_titlegeneral {
     font-weight: 700;
     align-self: flex-start;
 }
 
-.contacts_container{
+.contacts_container {
     background-color: #ebf9fe;
     width: 500px;
     display: flex;
@@ -146,44 +146,44 @@ main {
     padding: 30px 30px;
 }
 
-.contacts_item{
+.contacts_item {
     display: flex;
     background-color: white;
     width: 370px;
     border-radius: 15px;
     width: 100%;
     justify-content: space-evenly;
-    
+
 }
 
-.contacts_group1{
+.contacts_group1 {
     display: flex;
     align-items: center;
 }
 
-.contacts_group1_img{
+.contacts_group1_img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
 
-.contacts_group2{
+.contacts_group2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.contacts_group2_title{
+.contacts_group2_title {
     font-weight: 700;
 }
 
-.contacts_group3{
+.contacts_group3 {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.contacts_group3_btnmessage{
+.contacts_group3_btnmessage {
     background-color: white;
     border: 2px solid #0a65c2;
     border-radius: 20px;
@@ -192,12 +192,12 @@ main {
     font-weight: 400;
 }
 
-.contacts_group3_moreoptions{
+.contacts_group3_moreoptions {
     width: 40px;
     height: 43px;
 }
 
-.contact_iconplus{
+.contact_iconplus {
     height: 50px;
     width: 50px;
     background-color: #0a65c2;
@@ -208,20 +208,22 @@ main {
 }
 
 /*Nuevo Contacto*/
-.newContact_container{
+.newContact_container {
     display: flex;
     height: 100vh;
-    flex-direction: column-reverse;/*cambio*/
+    flex-direction: column-reverse;
+    /*cambio*/
     padding: 20px 0;
 }
 
-.newContact_group1{
-    width: 100%;/*cambio*/
+.newContact_group1 {
+    width: 100%;
+    /*cambio*/
     display: flex;
     flex-direction: column;
 }
 
-.newContact_group1> div{
+.newContact_group1>div {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -229,35 +231,35 @@ main {
     margin: auto;
 }
 
-.newContact_group1_division1{
+.newContact_group1_division1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.newContact_group1_title{
+.newContact_group1_title {
     font-weight: 700;
 }
 
-.newContact_group1_division2{
+.newContact_group1_division2 {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.newContact_group2_contaiinputs1{
+.newContact_group2_contaiinputs1 {
     display: flex;
     width: 100%;
     gap: 15px;
 }
 
-.newContact_group2_contaiinputs2{
+.newContact_group2_contaiinputs2 {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.newContact_group2_inputs{
+.newContact_group2_inputs {
     border: none;
     border-bottom: 1px solid #828282;
     width: 100%;
@@ -266,13 +268,14 @@ main {
 
 
 
-.newContact_group2{
-    width: 100%;/*cambio*/
-    height: 100vh;  
+.newContact_group2 {
+    width: 100%;
+    /*cambio*/
+    height: 100vh;
 
 }
 
-.newContact_group2_img{
+.newContact_group2_img {
     object-fit: cover;
     height: calc(100vh - 4px);
     width: calc(100% - 0px);
@@ -281,7 +284,7 @@ main {
 }
 
 
-.newContact_group1_btnaddcontact{
+.newContact_group1_btnaddcontact {
     background-color: #4556ef;
     text-decoration: none;
     color: white;
@@ -293,8 +296,105 @@ main {
 }
 
 @media (min-width: 768px) {
-    .newContact_container{
+    .newContact_container {
         flex-direction: row;
         padding: 0;
+    }
+}
+
+/*Perfil Usuario*/
+.profile_container {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    align-items: center;
+    color: white;
+    width: 90%;
+    left: calc(50% - 45%);
+    top: calc(28% - 12%);
+
+}
+
+.profile_group1_img {
+    height: 209px;
+    width: 203px;
+    border-radius: 50%;
+}
+
+.profile_group2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile_group2_name {
+    font-weight: 400;
+}
+
+.profile_group2_married {
+    display: flex;
+    align-items: center;
+}
+
+.profile_group2_married_title {
+    margin-right: 15px;
+}
+
+.profile_group2_married_img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.profile_group2_contactform {
+    display: flex;
+    gap: 10px;
+}
+
+.profile_group2_contactform_icon {
+    width: 30px;
+    height: 30px;
+    background-color: #303030;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.profile_group2_priorities {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.profile_group2_priorities_btn {
+    text-decoration: none;
+    color: white;
+    background-color: #303030;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+
+}
+
+.profile_group2_priorities_btnimage {
+    height: 15px;
+    width: 15px;
+
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .profile_container {
+        flex-direction: row;
+        display: flex;
+        gap: 29px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 30px;
+        justify-content: center;
+        color: white;
+        width: 600px;
+        left: calc(50% - 300px);
+        top: calc(40% - 12%);
     }
 }
