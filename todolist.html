@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="agendaweb">Agenda Web</h1>
+    <div class="containerbutton">
+        <button class="newTask_btn btnewtask" onclick=addList()>Agregar Tarea</button>
+        <a style="text-align: center; text-decoration: none;" href="./index.html" class="newTask_btn btnewtask">Back Login</a>
+    </div>
+    <div class="containerchecklist">
+
+    </div>
+    <div class="newTask">
+        <div class="newTask_description">
+            <h2 class="newTask_title">Nueva Tarea</h2>
+            <div class="newTask_divisions">
+                <label for="inputdescriptiontask" class="labeltask">Tarea:</label>
+                <input class="newTask_fields" id="inputdescriptiontask" type="text" placeholder="Agregar Tarea">
+            </div>
+            <div class="newTask_divisions">
+
+
+                <label for="selectpriority" class="labeltask">Prioridad de la tarea:</label>
+                <select class="newTask_fields" id="selectpriority" name="" id="">
+                    <option value="1">Urgente</option>
+                    <option value="2">Importante</option>
+                    <option value="3">No Urgente ni Importante</option>
+                    <option value="4">Delegable</option>
+                    <option value="5">Posponer</option>
+                </select>
+            </div>
+            <button class="newTask_btn save">Guardar</button>
+            <button class="newTask_btn cancel">Cancelar</button>
+        </div>
+
+    </div>
+
+    <div class="updateTask">
+        <div class="updateTask_description">
+            <h2 class="newTask_title">Actualizar Tarea</h2>
+            <div class="newTask_divisions">
+                <label for="inputdescriptiontaskupdate" class="labeltask">Tarea:</label>
+                <input class="newTask_fields" id="inputdescriptiontaskupdate" type="text" placeholder="Agregar Tarea">
+            </div>
+            <div class="newTask_divisions">
+                <label for="selectpriorityupdate" class="labeltask">Prioridad de la tarea:</label>
+                <select class="newTask_fields" id="selectpriorityupdate" name="" id="">
+                    <option value="1">Urgente</option>
+                    <option value="2">Importante</option>
+                    <option value="3">No Urgente ni Importante</option>
+                    <option value="4">Delegable</option>
+                    <option value="5">Posponer</option>
+                </select>
+            </div>
+            <button class="newTask_btn update">Actualizar</button>
+            <button class="newTask_btn cancel">Cancelar</button>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
