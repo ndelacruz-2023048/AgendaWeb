@@ -398,3 +398,42 @@ main {
         top: calc(40% - 12%);
     }
 }
+
+/*Detalle de Contacto*/
+
+.profile_container_nuevo{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.profile_container_nuevo2{
+    flex-direction: column;
+    top: calc(27% - 12%);
+}
+
+.profile_container2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile_container2_group{
+    display: flex;
+    gap: 10px;
+    padding: 15px 10px;
+    background-color: #353637;
+    border-radius: 15px;
+}
+
+.profile_container2_group_img{
+    height: 20px;
+    width: 20px;
+}
+
+@media (min-width: 768px) {
+    .profile_container_nuevo{
+        flex-direction: row;
+    }
+}
