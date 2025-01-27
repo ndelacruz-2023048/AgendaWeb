@@ -11,6 +11,8 @@ main {
     position: relative;
 }
 
+/*Login*/
+
 .login_img {
     object-fit: cover;
     width: 100vw;
@@ -81,6 +83,8 @@ main {
     padding: 8px 0;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 
 .login_group3_orsignin {
@@ -113,5 +117,184 @@ main {
     .login_container {
         width: 500px;
         left: calc(50% - 250px);
+    }
+}
+
+/*Contactos*/
+.contacts_main{
+    background-color: #0a65c2;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.contacts_titlegeneral{
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.contacts_container{
+    background-color: #ebf9fe;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 30px;
+    padding: 30px 30px;
+}
+
+.contacts_item{
+    display: flex;
+    background-color: white;
+    width: 370px;
+    border-radius: 15px;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+
+.contacts_group1{
+    display: flex;
+    align-items: center;
+}
+
+.contacts_group1_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.contacts_group2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts_group2_title{
+    font-weight: 700;
+}
+
+.contacts_group3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacts_group3_btnmessage{
+    background-color: white;
+    border: 2px solid #0a65c2;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: #0a65c2;
+    font-weight: 400;
+}
+
+.contacts_group3_moreoptions{
+    width: 40px;
+    height: 43px;
+}
+
+.contact_iconplus{
+    height: 50px;
+    width: 50px;
+    background-color: #0a65c2;
+    padding: 10px;
+    border-radius: 50%;
+    align-self: center;
+    cursor: pointer;
+}
+
+/*Nuevo Contacto*/
+.newContact_container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column-reverse;/*cambio*/
+    padding: 20px 0;
+}
+
+.newContact_group1{
+    width: 100%;/*cambio*/
+    display: flex;
+    flex-direction: column;
+}
+
+.newContact_group1> div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+    margin: auto;
+}
+
+.newContact_group1_division1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newContact_group1_title{
+    font-weight: 700;
+}
+
+.newContact_group1_division2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newContact_group2_contaiinputs1{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.newContact_group2_contaiinputs2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newContact_group2_inputs{
+    border: none;
+    border-bottom: 1px solid #828282;
+    width: 100%;
+    height: 40px;
+}
+
+
+
+.newContact_group2{
+    width: 100%;/*cambio*/
+    height: 100vh;  
+
+}
+
+.newContact_group2_img{
+    object-fit: cover;
+    height: calc(100vh - 4px);
+    width: calc(100% - 0px);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.newContact_group1_btnaddcontact{
+    background-color: #4556ef;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+    .newContact_container{
+        flex-direction: row;
+        padding: 0;
     }
 }
